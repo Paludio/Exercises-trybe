@@ -1,13 +1,10 @@
- #This was the fixation exercices.# <h1>
+ #This was the fixation exercices. <h1>
 
  * 1- copy trybe-skills.txt to a new branch ***trybe-skills-changes*** and checkout it;
 
  * 2- add two new skills in rybe-skills.txt;
 
- * 3- ```
- 
- git add ./ git commit -m " "/ git push
- ```
+ * 3- ´´´ git add ./ git commit -m " "/ git push
 
  * 4- open new ***pull request***;
 
