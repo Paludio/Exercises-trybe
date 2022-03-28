@@ -4,7 +4,9 @@
 
  * 2- add two new skills in rybe-skills.txt;
 
- * 3- '''sh git add ./ git commit -m " "/ git push ''';
+ * 3- '''
+ git add ./ git commit -m " "/ git push 
+ '''
 
  * 4- open new ***pull request***;
 
@@ -12,9 +14,11 @@
 
  * 6- new branch ***trybe-skills-updates*** and modification ***in trybe-skills.txt***;
 
- * 7- '''sh git add ./ git commit -m " "/ git push ''';
+ * 7- '''
+ git add ./ git commit -m " "/ git push 
+ '''
 
  * 8- in **gitHub** was made marge ***trybe-skills-changes*** witch ***trybe-skills-updates*** in the master branch;
 
- * 9- and finally solve the conflict wich the oder pull request;
+ * 9- and finally **solve** the **conflict** wich the oder **pull request**;
 
