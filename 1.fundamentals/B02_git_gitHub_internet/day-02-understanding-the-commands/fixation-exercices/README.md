@@ -5,7 +5,8 @@
  * 2- add two new skills in rybe-skills.txt;
 
  * 3- ```
- git add ./ git commit -m " "/ git push 
+ 
+ git add ./ git commit -m " "/ git push
  ```
 
  * 4- open new ***pull request***;
@@ -15,6 +16,7 @@
  * 6- new branch ***trybe-skills-updates*** and modification ***in trybe-skills.txt***;
 
  * 7- ```
+ 
  git add ./ git commit -m " "/ git push 
  ```
 
