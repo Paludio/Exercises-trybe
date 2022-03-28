@@ -1,6 +1,6 @@
  This was the fixation exercices. <h1>
 
- * 1- copy trybe-skills.txt to a new branch ***trybe-skills-changes*** and checkout it;
+ 1- copy trybe-skills.txt to a new branch ***trybe-skills-changes*** and checkout it;
 
  * 2- add two new skills in rybe-skills.txt;
 
