@@ -1,1 +1,1 @@
-Downloading repositories with "*git clone*".
+her i learn to use the "*git clone*".
