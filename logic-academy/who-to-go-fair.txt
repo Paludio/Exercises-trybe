@@ -1,0 +1,19 @@
+- Saber a localização;
+- Saber o que vai comprar;
+- Meio de locomoção;
+- Levantar;
+- Pegar a carteira;
+- Pegar o celular;
+- Se arrumar;
+- Sair de casa;
+- Fechar a casa;
+- Pegar o celular;
+- Abrir app uber
+- Chamar uber;
+- Entra no carro;
+- Pagar o Uber;
+- Sai do carro;
+- Olhar os preços;
+- Compra;
+- Pagar;
+- Ir embora;
