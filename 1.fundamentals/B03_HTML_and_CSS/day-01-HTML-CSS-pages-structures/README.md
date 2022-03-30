@@ -1,4 +1,4 @@
-# <h1> I learned </h1>
+# <h1> What i learned </h1>
 
 <p> I learned, in pratice, how to use **HTML** to structure web pages.</p>
 
