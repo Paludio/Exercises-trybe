@@ -3,7 +3,7 @@ h1, p {
 }
 
 li:hover {
-    background: rgb(9, 0, 128);
+    transition: blue;
 }
 
 li:active {
