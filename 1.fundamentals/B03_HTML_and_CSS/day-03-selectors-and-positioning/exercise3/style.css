@@ -3,13 +3,18 @@ h1, p {
 }
 
 li:hover {
-    transition: blue;
+    background: lightgreen;
 }
 
 li:active {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: helvetica;
+    color: white;
 }
 
-li, ol {
+ol, ul {
     list-style: none;
+}
+
+.link {
+    text-decoration: none;
 }
