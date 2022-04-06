@@ -1,0 +1,20 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    background: lightgreen;
+}
+
+li:active {
+    font-family: helvetica;
+    color: white;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
