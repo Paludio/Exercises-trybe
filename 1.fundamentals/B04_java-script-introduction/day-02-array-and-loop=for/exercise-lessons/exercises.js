@@ -14,8 +14,28 @@
 
 // console.log(menu);
 
-let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
+// let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
 
-for (index = 0; index < groceryList.length; index += 1) {
-    console.log(groceryList[index]);
+// for (index = 0; index < groceryList.length; index += 1) {
+//     console.log(groceryList[index]);
+// }
+
+// let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+// for (let index of names) {
+//     console.log(index);
+// }
+
+let jogo = [1, 3, 23, 54, 59, 23];
+let sorteio = [];
+
+for (index = 0; index < 6; index += 1) {
+    numeroAleatorio = Math.floor(Math.random() * 60) + 1;
+    sorteio.push(numeroAleatorio);
 }
+
+
+
+
+console.log(sorteio);
+
