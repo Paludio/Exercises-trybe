@@ -3,7 +3,13 @@
 
 // console.log(menuServices);
 
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
-let position = menu.indexOf('Portfólio');
+// let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+// let position = menu.indexOf('Portfólio');
 
-console.log(position);
+// console.log(position);
+
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+
+menu.push('Contato');
+
+console.log(menu);
