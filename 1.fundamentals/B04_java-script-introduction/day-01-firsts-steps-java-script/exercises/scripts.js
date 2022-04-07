@@ -1,7 +1,9 @@
 let n1 = 5;
 let n2 = 6;
 const n3 = 456;
-const n4 = 286;
+const n4 = 986;
+const n5 = 844;
+const sinal = true;
 let result ="";
 
 // console.log(n1 + n2);
@@ -10,9 +12,29 @@ let result ="";
 // console.log(n1 / n2);
 // console.log(n1 % n2);
 
-if (n3 > n4) {
-    result = "n3 maior";
+// if (n3 > n4) {
+//     result = "n3 maior";
+// } else {
+//     result = "n4 maior";
+// }
+// console.log(result);
+
+// if (n3 > n4 && n3 > n5) {
+//     result = "n3 é maior";
+// } else if (n4 > n3 && n4 > n5) {
+//     result = "n4 é maior";
+// } else {
+//     result = "n5 é maior";
+// }
+
+// console.log(result);
+
+if (sinal = true) {
+    result = "positivo";
+} else if (sinal = false) {
+    result = "negativo";
 } else {
-    result = "n4 maior";
+    result = "zero";
 }
-console.log(result);
+
+console.log(result)
