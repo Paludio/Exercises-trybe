@@ -4,7 +4,7 @@ const n3 = 456;
 const n4 = 986;
 const n5 = 844;
 const sinal = true;
-let result ="";
+// let result ="";
 
 // console.log(n1 + n2);
 // console.log(n1 - n2);
@@ -29,12 +29,27 @@ let result ="";
 
 // console.log(result);
 
-if (sinal = true) {
-    result = "positivo";
-} else if (sinal = false) {
-    result = "negativo";
-} else {
-    result = "zero";
-}
+// if (sinal = true) {
+//     result = "positivo";
+// } else if (sinal = false) {
+//     result = "negativo";
+// } else {
+//     result = "zero";
+// }
 
-console.log(result)
+// console.log(result)
+
+const a1 = 20;
+const a2 = 10;
+const a3 = 0;
+let result = true;
+
+if (a1 + a2 + a3 === 180) {
+    console.log(result);
+} else if (a1 + a2 + a3 > 180 || a1 + a2 + a3 < 180 && a1 + a2 + a3 > 0) {
+    console.log(!result);
+} else if (a1 + a2 + a3 < 0) {
+    console.log("Entrada inválida.");
+} else {
+    console.log("Erro");
+}
