@@ -37,14 +37,14 @@ let meuJogo = [8, 1, 54, 20, 17, 36]; //Meus números
 let qtdSorteios = 0; //contador de sorteios
 let numerosSorteados = []; // array dos números que vão ser sorteados
 
-meuJogo.sort(); //deixar o array em ordem "crescente" (descobri que é igual quando é com pasta kk ele olha o primeiro número tipo se tiver 1, 8, 12, 20 vai ficar 1, 12, 20, 8)
+meuJogo.sort(); //deixar o array em ordem "crescente" (descobri que é igual quando é com pasta kk ele olha o primeiro número/string tipo se tiver 1, 8, 12, 20 vai ficar 1, 12, 20, 8)
 
 for (index3 = 0; index3 <= 50063860; index3 +=1 ){ // for para repetir os jogos "50063860" é a chance da pessoa de ganhar
     qtdSorteios = qtdSorteios + 1; // para contar a quantidade de sorteios
     numerosSorteados.sort(); // ordenar o array dos números sorteados
 
     if (meuJogo === numerosSorteados) { // pra ver se eu ganhei
-        console.log("Parabéns após " + qtdSorteios + "você ganhou!"); // vai mostrar depois de quantos jogos ganhei
+        console.log("Parabéns após " + qtdSorteios + "você ganhou!"); // vai mostrar depois de quantos sorteios ganhei
         break;
     } else if (numerosSorteados.length <= 6 && numerosSorteados.length > 0) { // aqui é uma condição pra limpar o array...
             console.log(numerosSorteados); // mostrar no console os números que foram sorteados
