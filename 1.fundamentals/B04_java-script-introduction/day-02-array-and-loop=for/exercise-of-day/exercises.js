@@ -61,13 +61,21 @@
 //     console.log("Nenhum valor encontrado");
 // }
 
-let numbers = [2, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let resultado = numbers[0];
+// let numbers = [2, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let resultado = numbers[0];
 
- for (let index = 0; index < numbers.length; index += 1)  {
-     if (resultado > numbers[index]) {
-         resultado = numbers[index];
-     }
+//  for (let index = 0; index < numbers.length; index += 1)  {
+//      if (resultado > numbers[index]) {
+//          resultado = numbers[index];
+//      }
+// }
+
+// console.log(resultado);
+
+let contador = [];
+
+for (index = 1; index <= 25; index += 1){
+    contador.push(index);
 }
 
-console.log(resultado);
+console.log(contador);
