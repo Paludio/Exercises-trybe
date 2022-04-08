@@ -73,9 +73,14 @@
 // console.log(resultado);
 
 let contador = [];
+let divisao;
+
 
 for (index = 1; index <= 25; index += 1){
     contador.push(index);
 }
 
-console.log(contador);
+for (let index2 = 0; index2 < contador.length; index2 += 1) {
+    divisao = contador[index2] / 2;
+    console.log(divisao);
+}
