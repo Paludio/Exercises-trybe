@@ -34,13 +34,29 @@
 //     console.log("valor menor ou igual a 20");
 // }
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let resultado = 0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let resultado = 0;
 
-for (let index = 0; index < numbers.length; index += 1)  {
-    if (resultado < numbers[index]) {
-        resultado = numbers[index];
+// for (let index = 0; index < numbers.length; index += 1)  {
+//     if (resultado < numbers[index]) {
+//         resultado = numbers[index];
+//     }
+// }
+
+// console.log(resultado);
+
+let numbers = [6, 10, 4, 20, 70, 8, 100, 2, 36, 28];
+let contador = 0;
+
+
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        contador += 1
     }
 }
 
-console.log(resultado);
+if (contador > 0) {
+    console.log(contador)
+} else {
+    console.log("Nenhum valor encontrado");
+}
