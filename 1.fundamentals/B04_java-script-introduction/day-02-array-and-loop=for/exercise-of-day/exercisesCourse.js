@@ -5,7 +5,20 @@
 // }
 // console.log(numero);
 
-let palavra = "trybe";
-let palavraInvertida = palavra.split("").reverse().join("");
+// let palavra = "trybe";
+// let palavraInvertida = palavra.split("").reverse().join("");
 
-console.log(palavraInvertida);
+// console.log(palavraInvertida);
+
+let palavra = "escola";
+let array1 = [];
+let array2 = [];
+
+for (let index = 0; index < palavra.length; index += 1) {
+    array1.push(palavra[index]);
+    array2.unshift(array1[index]);
+}
+
+let toString = array2.toString("");
+
+console.log(toString.replace(/,/g, ""));
