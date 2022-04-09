@@ -10,15 +10,33 @@
 
 // console.log(palavraInvertida);
 
-let palavra = "escola";
-let array1 = [];
-let array2 = [];
+// let palavra = "tijolo";
+// let array1 = [];
+// let array2 = [];
 
-for (let index = 0; index < palavra.length; index += 1) {
-    array1.push(palavra[index]);
-    array2.unshift(array1[index]);
+// for (let index = 0; index < palavra.length; index += 1) {
+//     array1.push(palavra[index]);
+//     array2.unshift(array1[index]);
+// }
+
+// let toString = array2.toString("");
+
+// console.log(toString.replace(/,/g, ""));
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let comparador;
+let comparador2 = "";
+let comparador3 = "";
+
+for (let index = 0; index < array.length; index += 1) {
+    comparador = array[index];
+
+    if (comparador.length >= comparador2.length) {
+        comparador2 = array[index];
+    } else {
+        comparador3 = array[index];
+    }
 }
 
-let toString = array2.toString("");
-
-console.log(toString.replace(/,/g, ""));
+console.log("A string com maior números de letra é: " + comparador2);
+console.log("A string com menor números de letra é: " + comparador3)
