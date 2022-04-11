@@ -76,3 +76,38 @@
 //   for (let index in car) {
 //       console.log(index, car[index]);
 //   }
+
+let statusCarro = "Desligado"
+let aceleracao = 0;
+let rotacaoVolante = 0;
+
+function ligarDesligar() {
+    if (statusCarro === "Desligado") {
+        statusCarro = "Ligado";
+    } else {
+        statusCarro = "Desligado";
+    }
+    console.log(statusCarro);
+}
+
+function acelerar(incremento) {
+    aceleracao = aceleracao + incremento;
+    console.log("Acelerando a " + aceleracao + "m/s²");
+}
+
+function frear(decremento) {
+    aceleracao = aceleracao - decremento;
+    console.log("desacelerando a " + aceleracao + "m/s²");
+}
+
+function girarVolante(anguloRotacao) {
+    rotacaoVolante = anguloRotacao;
+
+    console.log(rotacaoVolante + "°");
+}
+
+ligarDesligar();
+acelerar(20);
+girarVolante(-45);
+frear(5);
+girarVolante(0);
