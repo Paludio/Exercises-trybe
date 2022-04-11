@@ -41,35 +41,58 @@
 // console.log("A string com maior números de letra é: " + comparador2);
 // console.log("A string com menor números de letra é: " + comparador3)
 
-let numero = 50;
-let divisores = 0;
-let contador;
-let maiorNumero = 0;
-let primos = [];
+// let numero = 600;
+// let divisores = 0;
+// let contador;
+// let maiorNumero = 0;
+// let primos = [];
 
-for (let index = 1; index <= numero; index += 1) { // para contar de 1 até o número de entrada
-    contador = index;
+// for (let index = 1; index <= numero; index += 1) { // para contar de 1 até o número de entrada
+//     contador = index;
 
-    if (divisores === 2) { //para verificar se a quantidade de divisores é igual a 2, se sim o contador vai empurrar o número para dentro do array primos
-        primos.push(contador - 1); //esse -1 é porque o contador vai estar com o próximo valor a ser dividido e nós queremos o valor que já foi dividido
-    }
+//     if (divisores === 2) { //para verificar se a quantidade de divisores é igual a 2, se sim o contador vai empurrar o número para dentro do array primos
+//         primos.push(contador - 1); //esse -1 é porque o contador vai estar com o próximo valor a ser dividido e nós queremos o valor que já foi dividido
+//     }
 
-    divisores = 0; //para reiniciar o valor da quantidade de divisores
+//     divisores = 0; //para reiniciar o valor da quantidade de divisores
 
-    for (let index2 = 0; index2 <= contador; index2 += 1) { //para dividir o numero que vai estar no contador por 0 até ele mesmo
-        if (contador % index2 === 0) {
-            divisores += 1; //soma +1 ao divisor, se ele passar de 2 divisores significa que não é primo
-        }
-    }
-}
+//     for (let index2 = 0; index2 <= contador; index2 += 1) { //para dividir o numero que vai estar no contador por 0 até ele mesmo
+//         if (contador % index2 === 0) {
+//             divisores += 1; //soma +1 ao divisor, se ele passar de 2 divisores significa que não é primo
+//         }
+//     }
+// }
 
-for (index4 = 0; index4 < primos.length; index4 += 1){ //para percorrer o array primo e comparar qual é o maior
-    if (maiorNumero < primos[index4]) {
-        maiorNumero = primos[index4];
-    }
-}
+// for (index4 = 0; index4 < primos.length; index4 += 1){ //para percorrer o array primo e comparar qual é o maior
+//     if (maiorNumero < primos[index4]) {
+//         maiorNumero = primos[index4];
+//     }
+// }
 
-let toString = primos.toString(""); //transformando o array em string
+// let toString = primos.toString(""); //transformando o array em string
 
-console.log("Os números primos de 1 a " + numero + " são: " + primos + "."); //imprimindo os números primos
-console.log("O maior número primo entre esses é: " + maiorNumero + "."); //imprimindo o maior número entre eles
+// console.log("Os números primos de 1 a " + numero + " são: " + primos + "."); //imprimindo os números primos
+// console.log("O maior número primo entre esses é: " + maiorNumero + "."); //imprimindo o maior número entre eles
+
+
+// let numero = 5;
+// let coluna = "";
+
+// for (let index = 1; index <= numero; index += 1) {
+//     coluna = coluna + "*";
+//     console.log(coluna);
+// ;}
+
+// let numero = 5;
+// let coluna = "";
+
+// for (let index = 1; index <= numero; index += 1) {
+//     coluna = coluna + "*";
+// ;}
+
+// for (let index2 = 1; index2 <= numero; index2 += 1){
+//     console.log(coluna);
+// }
+
+
+
