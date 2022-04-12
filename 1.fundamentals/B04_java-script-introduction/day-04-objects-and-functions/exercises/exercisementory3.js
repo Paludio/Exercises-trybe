@@ -30,7 +30,7 @@ function finalWord (word, ending) {
         let prova;
 
         for (index  = arrayAnding.length; index > 0; index -= 1){ //aqui é uma repetição combase no length do ending (ultimas letras)
-            if (arrayAnding[arrayAnding.length -1] == arrayWord[arrayWord.length -1]){ //para comparar o final dos 2 array
+            if (arrayAnding[arrayAnding.length -1] === arrayWord[arrayWord.length -1]){ //para comparar o final dos 2 array
                 contador += 1; //se forem iguais soma 1.
             }
             arrayAnding.pop();//esses 2 pop apaga o ultimo valor do array
@@ -48,4 +48,4 @@ function finalWord (word, ending) {
     return finalWord;
  }
 
- finalWord("trybe", "be");
+ finalWord("helicoptero", "tero");
