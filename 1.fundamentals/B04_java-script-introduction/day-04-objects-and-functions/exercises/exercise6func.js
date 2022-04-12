@@ -9,4 +9,4 @@ function somatorio (numero) {
     return soma;
 }
 
-console.log(somatorio(25));
+console.log(somatorio(25)); 
