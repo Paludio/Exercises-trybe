@@ -24,22 +24,28 @@ Dica: Use o SPLIT. */
 
 function finalWord (word, ending) {
 
-        let array1 = word.split("");
-        let array2 = ending.split("");
-        let prova = true;
- 
-    for (let index = array2.length; index >= 0; index -= 1){
-        for (let index2 = array1.length; index2 >= array2.length; index2 -= 1){
-            if (array1[index2] === array2[index]){
-                prova = true;
-            } else {
-                prova = false;
+        let arrayWord = word.split("");
+        let arrayAnding = ending.split("");
+        let contador = 0;
+        let prova;
+
+        for (index  = arrayAnding.length; index > 0; index -= 1){ //aqui é uma repetição combase no length do ending (ultimas letras)
+            if (arrayAnding[arrayAnding.length -1] == arrayWord[arrayWord.length -1]){ //para comparar o final dos 2 array
+                contador += 1; //se forem iguais soma 1.
             }
+            arrayAnding.pop();//esses 2 pop apaga o ultimo valor do array
+            arrayWord.pop();
         }
-    }
-    
+        
+        arrayAnding = ending.split("");//para reiniciar o length do array ending já que eu apaguei ele no for em cima kk
+        
+        if (contador == arrayAnding.length){ //se o valor do contador for igual ao valor do length do anding significa que as letras são iguais
+            prova = true;
+        } else {
+            prova = false;
+        }
     console.log(prova);
     return finalWord;
  }
 
- finalWord("pablo", "lo");
+ finalWord("trybe", "be");
