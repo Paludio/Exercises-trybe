@@ -11,8 +11,8 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
- document.getElementsByTagName('p')[0].innerText = 'Eu me vejo formado na trybe, falando indglês e ganhando em dolar.';
+ document.getElementsByTagName('p')[0].innerText = 'Eu me vejo formado na trybe, falando inglês e ganhando em dolar.';
 
  document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
 
- 
+ document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
