@@ -66,7 +66,7 @@ function imagemSection (className, tag, src) {
     paiImagem.appendChild(filhoImagem);
 }
 
-let numeros = ['um', 'dois','três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+let numeros = ['Um', 'Dois','Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
 
 function listaNaoOrdenada () {
     let paiSection = document.querySelector('.right-content');
