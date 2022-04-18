@@ -39,12 +39,30 @@ function alterarTexto () {
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
+
+myWebpage.addEventListener('dblclick', redirecionar);
+
+function redirecionar () {
+    window.open('https://instagram.com');
+}
+
 // 4.1. Que tal redirecionar para seu portfólio?
 
 
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+myWebpage.addEventListener('mouseover', mudaCor);
+myWebpage.addEventListener('mouseleave', voltaCor);
+
+function voltaCor () {
+    myWebpage.style.color = 'white';
+}
+
+function mudaCor () {
+    myWebpage.style.color = 'red';
+}
 
 // Segue abaixo um exemplo do uso de event.target:
 
