@@ -35,7 +35,17 @@ function primeiroFilhoSection (tag) {
     paiSection.appendChild(filhoP);
 }
 
+function segundoFilhoMain (className, tag) {
+    let paiMain = document.querySelector('.main-content');
+
+    let filhoSection = document.createElement(tag);
+    filhoSection.className = className;
+
+    paiMain.appendChild(filhoSection);
+}
+
 primeiroFilhoBody('Exercício 5.2 - JavaScript DOM');
 segundoFilhoBody('main-content', 'main');
 primeiroFilhoMain('center-content', 'section');
 primeiroFilhoSection('p');
+segundoFilhoMain('left-content', 'section');
