@@ -14,6 +14,7 @@ function segundoFilhoBody (className, tag) {
 
     let filhoMain = document.createElement(tag);
     filhoMain.className = className;
+    filhoMain.style.backgroundColor = 'purple';
 
     paiBody.appendChild(filhoMain);
 }
@@ -50,6 +51,7 @@ function terceiroFilhoMain (className, tag) {
 
     let filhoSection = document.createElement(tag);
     filhoSection.className = className;
+    filhoSection.style.marginRight = 'auto';
 
     paiMain.appendChild(filhoSection);
 }
