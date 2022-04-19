@@ -31,6 +31,7 @@ function criarDiasDoMês() {
             listaDias.innerText = dias;
         } else if (dias === 25) {
             listaDias.className = 'day holiday friday'
+            listaDias.innerText = dias;
         } else {
             listaDias.className = 'day';
             listaDias.innerText = dias;
@@ -50,8 +51,26 @@ function criaBotao (feriados) {
     pai.appendChild(filhoBotao)
 }
 
+function eventoClick () {
+    const feriados = document.getElementsByClassName('holiday');
+    let botaoDom = document.getElementById('btn-holiday');
+    let bg = 'rgb(238,238,238)';
+    let novoBg = 'white'
+
+    botaoDom.addEventListener('click', function () {
+        for (let index = 0; index < feriados.length; index += 1) {
+            if (feriados[index].style.backgroundColor === novoBg) {
+                feriados[index].style.backgroundColor = bg;
+            } else {
+                feriados[index].style.backgroundColor = novoBg;
+            }
+        }
+    })
+}
 
 
   createDaysOfTheWeek();
   criarDiasDoMês();
   criaBotao('feriados');
+  eventoClick();
+ 
