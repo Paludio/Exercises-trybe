@@ -87,7 +87,7 @@ function botaoSexta (sexta) {
 function eventoSexta (dias) {
     const botaoSexta = document.getElementById('btn-friday');
     const diasSexta = document.getElementsByClassName('friday');
-    let textoDias = 'SEXTA';
+    let textoDias = 'SEXTOU';
     
     
 
@@ -102,10 +102,29 @@ function eventoSexta (dias) {
     })
 }
 
+function zoom () {
+    let dias = document.querySelector('#days');
+
+    dias.addEventListener('mousemove', function (event) {
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = '600';
+    })
+}
+
+function zoomOut () {
+    let dias = document.querySelector('#days');
+
+    dias.addEventListener('mouseout', function(event) {
+        event.target.style.fontWeight = '200';
+        event.target.style.fontSize = '20px';
+    })
+}
+
 createDaysOfTheWeek();
 criarDiasDoMês();
 criaBotao('Feriados');
 botaoSexta('Sexta-feira');
-
+zoom();
+zoomOut();
  
  
