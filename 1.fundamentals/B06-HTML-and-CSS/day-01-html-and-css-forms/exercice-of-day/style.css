@@ -7,3 +7,7 @@
     display: block;
     margin-bottom: 5px;
 }
+
+.radio {
+    display: inline-block;
+}
