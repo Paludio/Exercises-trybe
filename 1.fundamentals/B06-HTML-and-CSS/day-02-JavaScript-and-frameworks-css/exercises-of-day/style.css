@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#complet-name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.radio {
+    display: inline-block;
+}
+header {
+    text-align: center;
+}
+
+.paragrafos {
+    text-align: center;
+}
+
+.botoes {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+p {
+    color: lightslategray);
+}

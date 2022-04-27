@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio viagem</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de inscrição</h1>
+    </header>
+
+    <main id="main-content">
+        <form action="" method="post">
+            <div class="container" id="complet-name">
+                <label for="full-name">Nome:
+                    <input type="text" name="fullName" id="full-name" placeholder="Digite seu nome completo"
+                        minlength="10" maxlength="40" required autofocus>
+                </label>
+            </div>
+            <div class="container">
+                <label for="client-email">E-mail:
+                    <input type="email" name="clientEmail" id="client-email" placeholder="Digite seu e-mail"
+                        minlength="10" maxlength="50" required>
+                </label>
+            </div>
+            <div class="container">
+                <p class="paragrafos flow-text">Destino preferido</p>
+                <p>
+                    <label for="destino-cidade">
+                        <input class="with-gap" type="radio" name="destinos" id="destino-cidade" checked>
+                        <span>Cidade</span>
+                    </label>
+                </p>
+            </div>
+            <p class="container">
+                <label for="destino-campo">
+                    <input class="with-gap" type="radio" name="destinos" id="destino-campo"> <span>Campo</span>
+                </label>
+            </p>
+            <p class="container">
+                <label for="destino-praia">
+                    <input class="with-gap" type="radio" name="destinos" id="destino-praia"> <span>Praia</span>
+                </label>
+            </p>
+            <p class="container">
+                <label for="destino-montanhas">
+                    <input class="with-gap" type="radio" name="destinos" id="destino-montanhas"> <span>Montanhas</span>
+                </label>
+
+            </p>
+            <div class="container">
+                <p class="paragrafos flow-text">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+                    TrybeTrip?</p>
+            </div>
+            <div class="container">
+                <textarea class="materialize-textarea" name="detalhes" id="textarea" cols="30" rows="10" maxlength="500"
+                    placeholder="Digite aqui"></textarea>
+            </div>
+            <div class="container">
+                <p class="paragrafos flow-text">Qual a melhor data para realizar sua viagem?</p>
+                <div class="container">
+                    <label for="date">
+                        <input class="validate" type="date" name="data" id="date" placeholder="dd/mm/aaaa" required>
+                    </label>
+                </div>
+                <div class="container">
+                    <label for="check-box">
+                        <input type="checkbox" name="concordo1" id="check-box" /> <span>Gostaria de receber outras
+                            incríveis
+                            oportunidades oferecidas pela Trybe?</span>
+                    </label>
+                </div>
+                <div class="container">
+                    <label for="check-box2">
+                        <input type="checkbox" name="concordo2" id="check-box2" /> <span>Concordo que imagens das minhas
+                            férias
+                            poderão ser usadas na divulgação de concursos futuros.</span>
+                    </label>
+                </div>
+            </div>
+            <div class="botoes" class="container">
+                <button class="waves-effect waves-light btn" type="submit" id="botao"><i class="material-icons right">send</i>Enviar</button>
+                <button class="waves-effect waves-light btn" type="reset" id="botaoReset"><i class="material-icons right">refresh</i>Resetar</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
