@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  ul {
+      text-decoration: none;
+      list-style: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    body {
+        font-size: 20px;
+    }
+
+      p {
+          text-align: center;
+          font-size: 22px;
+      }
+
+
+      .ul {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          font-weight: bold;
+      }
+
+      h1 {
+          text-align: center;
+          font-size: 35px;
+      }
+
+      h2 {
+          text-align: center;
+      }
+
+      h3 {
+          text-align: center;
+      }
+  }
