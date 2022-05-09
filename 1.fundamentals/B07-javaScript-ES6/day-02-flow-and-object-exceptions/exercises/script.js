@@ -1,6 +1,8 @@
 const verifica = (value1, value2) => {
     if (value1 === '' || value2 === '') {
-        throw new Error('Existe um campo vazio!')
+        throw new Error('Existe um campo vazio!');
+    } else if (isNaN(value1) || isNaN(value2)) {
+        throw new Error('Insira somente números!');
     }
 }
 
