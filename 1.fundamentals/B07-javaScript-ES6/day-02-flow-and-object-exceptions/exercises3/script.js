@@ -18,6 +18,8 @@ const lesson3 = {
     turno: 'noite',
 };
 
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+
 function adiciona (turno) {
     turno.turno = 'noite';
 }
@@ -39,7 +41,8 @@ function valores (objeto) {
     console.log(Object.values(objeto));
 }
 
-adiciona(lesson1);
-lista(lesson2);
-console.log(tamanho(lesson3));
-valores(lesson3);
+// adiciona(lesson1);
+// lista(lesson2);
+// console.log(tamanho(lesson3));
+// valores(lesson3);
+console.log(allLessons);
