@@ -88,8 +88,13 @@ function smallerName() {
     return books.every((person) => person.author.birthYear > 1900 && person.author.birthYear <= 2000);
   }
 
+  function someBookWasReleaseOnThe80s() {
+    return books.some((releaseYear) => releaseYear.releaseYear >= 1980 && releaseYear.releaseYear <= 1989);
+  }
+
 console.log(authorBornIn1947());
 console.log(smallerName());
 console.log(getNamedBook());
 console.log(booksOrderedByReleaseYearDesc());
 console.log(everyoneWasBornOnSecXX());
+console.log(someBookWasReleaseOnThe80s());
