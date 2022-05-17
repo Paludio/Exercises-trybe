@@ -80,6 +80,11 @@ function smallerName() {
     return books.find((book) => book.name.length === 26);
   }
 
+  function booksOrderedByReleaseYearDesc() {
+    return books.sort((releaseYear1, releaseYear2) => releaseYear2.releaseYear - releaseYear1.releaseYear);
+  }
+
 console.log(authorBornIn1947());
 console.log(smallerName());
 console.log(getNamedBook());
+console.log(booksOrderedByReleaseYearDesc());
