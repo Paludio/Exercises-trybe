@@ -92,9 +92,17 @@ function smallerName() {
     return books.some((releaseYear) => releaseYear.releaseYear >= 1980 && releaseYear.releaseYear <= 1989);
   }
 
+  function authorUnique() {
+    return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear)
+      && (bookSome.author.name !== book.author.name)));
+  }
+
 console.log(authorBornIn1947());
 console.log(smallerName());
 console.log(getNamedBook());
 console.log(booksOrderedByReleaseYearDesc());
 console.log(everyoneWasBornOnSecXX());
 console.log(someBookWasReleaseOnThe80s());
+console.log(authorUnique());
