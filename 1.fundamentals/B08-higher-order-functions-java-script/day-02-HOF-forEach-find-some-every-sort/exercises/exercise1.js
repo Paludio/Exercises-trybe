@@ -72,10 +72,14 @@ function smallerName() {
             nameBook = book.name;
         }
     })
-  
-    // Variável nameBook que receberá o valor do menor nome;
+
     return nameBook;
+  }
+
+  function getNamedBook() {
+    return books.find((book) => book.name.length === 26);
   }
 
 console.log(authorBornIn1947());
 console.log(smallerName());
+console.log(getNamedBook());
