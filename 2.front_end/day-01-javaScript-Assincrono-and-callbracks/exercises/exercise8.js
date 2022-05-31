@@ -42,6 +42,4 @@ const pokemons = [
     }
   );
   
-  module.exports = {
-    getPokemonDetails,
-  };
+  module.exports = { getPokemonDetails };
