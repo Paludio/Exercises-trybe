@@ -16,15 +16,24 @@ const append = (data) => {
   });
 };
 
-const arrayCripto = () => {
-  fetch(url).then((response) => response.json()).then((data) => {
+const arrayCripto = async () => {
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
     const arrayData = data.data;
     const newArray = [];
+
     arrayData.forEach((cripto) => {
       if (newArray.length <= 9) newArray.push(cripto);
     });
+
     append(newArray);
-  })
-};
+
+  } catch (error) {
+    console.log(`Algo deu errado :( ${error}`);
+  }
+}
 
 window.onload = arrayCripto();
